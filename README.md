@@ -23,6 +23,27 @@ claude plugin install read-guard@read-guard
 
 Needs Node.js on the PATH. Start a new session after installing.
 
+## Stats
+
+Like `rtk gain`, the plugin counts what it saved. Every denied read logs the size of the whole file; every later
+partial read of that file in the same session is subtracted. Run `/read-guard:stats` in Claude Code, or
+`node hooks/stats.js` from the plugin folder:
+
+```
+read-guard: estimated tokens (~4 chars per token)
+
+Period      Denied   Whole files  Parts read       Saved  Saved
+Today            1        19,408         934      18,474    95%
+7 days           1        19,408         934      18,474    95%
+All time         1        19,408         934      18,474    95%
+
+Top files
+      18,474  Source/PluginEditor.cpp
+```
+
+Tokens are estimated from characters. Grep output and Explore summaries aren't subtracted, so the real saving is
+somewhat lower. The log is `~/.claude/read-guard/log.jsonl`.
+
 ## Settings
 
 `READ_GUARD_LINES`: the line limit, 400 by default. Set it in your shell or in `settings.json`:

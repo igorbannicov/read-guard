@@ -1,6 +1,7 @@
 {
   "name": "read-guard",
   "owner": { "name": "Igor Bannicov" },
+  "description": "read-guard: a Claude Code plugin that saves tokens by not reading big files whole.",
   "plugins": [
     {
       "name": "read-guard",
