@@ -1,0 +1,11 @@
+{
+  "name": "read-guard",
+  "owner": { "name": "Igor Bannicov" },
+  "plugins": [
+    {
+      "name": "read-guard",
+      "source": "./",
+      "description": "Stops Claude Code from reading big files whole: grep and read the part you need, or ask the Explore agent."
+    }
+  ]
+}
