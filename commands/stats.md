@@ -1,7 +1,4 @@
 ---
 description: Show how many tokens read-guard saved
-allowed-tools: Bash(node:*)
 ---
-!`node "${CLAUDE_PLUGIN_ROOT}/hooks/stats.js"`
-
-Show the stats above to the user exactly as they are, in a code block, with no comments.
+Run `node "${CLAUDE_PLUGIN_ROOT}/hooks/stats.js"` with the Bash tool, then show its output to the user exactly as it is, in a code block, with no comments.

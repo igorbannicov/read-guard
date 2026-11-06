@@ -1,6 +1,6 @@
 {
   "name": "read-guard",
-  "version": "1.1.0",
+  "version": "1.1.1",
   "description": "Stops Claude Code from reading big files whole: grep and read the part you need, or ask the Explore agent.",
   "author": { "name": "Igor Bannicov" },
   "repository": "https://github.com/igorbannicov/read-guard",
